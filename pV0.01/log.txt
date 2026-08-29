@@ -1,0 +1,169 @@
+[Zed] Задача:
+
+Напиши функцию factorial(n), которая возвращает факториал числа n.
+Если n < 0, возвращает None.
+Не используй math.factorial. Реализуй через рекурсию или цикл.
+
+После определения функции добавь следующий код для проверки:
+if __name__ == "__main__":
+    tests = [
+        (5, 120),
+        (0, 1),
+        (1, 1),
+        (-1, None),
+        (3, 6)
+    ]
+    for n, expected in tests:
+        result = factorial(n)
+        if result != expected:
+            print(f"FAIL: factorial({n}) returned {result}, expected {expected}")
+            exit(1)
+    print("ALL TESTS PASSED")
+
+
+--- Итерация 1 ---
+[Zed] Код:
+def factorial(n):
+    if n < 0:
+        return None
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+if __name__ == "__main__":
+    tests = [
+        (5, 120),
+        (0, 1),
+        (1, 1),
+        (-1, None),
+        (3, 6)
+    ]
+    for n, expected in tests:
+        result = factorial(n)
+        if result != expected:
+            print(f"FAIL: factorial({n}) returned {result}, expected {expected}")
+            exit(1)
+    print("ALL TESTS PASSED")
+[Zed] ❌ Ошибка выполнения:
+Python
+
+--- Итерация 2 ---
+[Zed] Код:
+def factorial(n):
+    if n < 0:
+        return None
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+if __name__ == "__main__":
+    tests = [
+        (5, 120),
+        (0, 1),
+        (1, 1),
+        (-1, None),
+        (3, 6)
+    ]
+    for n, expected in tests:
+        result = factorial(n)
+        if result != expected:
+            print(f"FAIL: factorial({n}) returned {result}, expected {expected}")
+            exit(1)
+    print("ALL TESTS PASSED")
+[Zed] ❌ Ошибка выполнения:
+Python
+
+--- Итерация 3 ---
+[Zed] Код:
+def factorial(n):
+    if n < 0:
+        return None
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+if __name__ == "__main__":
+    tests = [
+        (5, 120),
+        (0, 1),
+        (1, 1),
+        (-1, None),
+        (3, 6)
+    ]
+    for n, expected in tests:
+        result = factorial(n)
+        if result != expected:
+            print(f"FAIL: factorial({n}) returned {result}, expected {expected}")
+            exit(1)
+    print("ALL TESTS PASSED")
+[Zed] ❌ Ошибка выполнения:
+Python
+
+--- Итерация 4 ---
+[Zed] Код:
+def factorial(n):
+    if n < 0:
+        return None
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+if __name__ == "__main__":
+    tests = [
+        (5, 120),
+        (0, 1),
+        (1, 1),
+        (-1, None),
+        (3, 6)
+    ]
+    for n, expected in tests:
+        result = factorial(n)
+        if result != expected:
+            print(f"FAIL: factorial({n}) returned {result}, expected {expected}")
+            exit(1)
+    print("ALL TESTS PASSED")
+[Zed] ❌ Ошибка выполнения:
+Python
+
+--- Итерация 5 ---
+[Zed] Код:
+def factorial(n):
+    if n < 0:
+        return None
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+if __name__ == "__main__":
+    tests = [
+        (5, 120),
+        (0, 1),
+        (1, 1),
+        (-1, None),
+        (3, 6)
+    ]
+    for n, expected in tests:
+        result = factorial(n)
+        if result != expected:
+            print(f"FAIL: factorial({n}) returned {result}, expected {expected}")
+            exit(1)
+    print("ALL TESTS PASSED")
+[Zed] ❌ Ошибка выполнения:
+Python
+[Zed] ❌ Не удалось исправить за 5 попыток.
+Прошел там код написан криво мне лень дописывать кто хочет может исправить я бы не стал заострять внимание слишком легкий тест
